@@ -1,15 +1,15 @@
 @font-face {
   font-family: "PressStart2P";
-  src: url("../fonts/PressStart2P-Regular.ttf") format("truetype");
+  src: url("./fonts/PressStart2P-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Orbitron";
-  src: url("../fonts/Orbitron-VariableFont_wght.ttf");
+  src: url("./fonts/Orbitron-VariableFont_wght.ttf");
 }
 html, body {
   margin: 0;
   padding: 0;
-  background-image: url("../assets/space-background.png");
+  background-image: url("./assets/space-background.png");
   background-attachment: fixed;
   animation: rotate 25s linear infinite;
   box-sizing: content-box;
@@ -208,7 +208,7 @@ span {
 
 .vid {
   background-color: #171717;
-  background-image: url("../assets/pages/playgif.webm");
+  background-image: url("./assets/pages/playgif.webm");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
