@@ -1,0 +1,19 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #171717;
+  }
+
+  .logoContainer{
+    display: flex;
+    justify-content: center;
+  }
+
+
+  p{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+
+  }
