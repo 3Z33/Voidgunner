@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/Index.css">
+    <title>Voidgunner</title>
+</head>
+<body> 
+
+    <header>
+         <div>
+            <nav>
+                <div id="logoContainer"><img src="../assets/pages/vlogo.png" alt="logo" width="150px"></div>
+                <ul>
+                    <li><a href="./Index.php">accueil</a></li>
+                    <li><a href="./hangar.php">hangar</a></li>
+                    <li><a href="#">tableau de scores</a></li>
+                    <li><a href="#">connexion</a></li>
+                </ul>
+                <div id="navbar-login">
+                    <form action="login.php" method="POST" id="connectionForm">
+                        <label for="login-userName">Nom d'utilisateur :</label>
+                        <input type="text" name="login-userName" id="login-userName">
+                        <label for="login-userPassword">Mot de passe :</label>
+                        <input type="password" name="login-userPassword" id="login-userPassword">
+                        <button id='connectBt'>Se connecter</button>
+                        <p><a href="#" id="registration">Pas de compte ?</a></p>
+                        <p><a href="#" id="forgotPassword">Mot de passe oublié ?</a></p>
+                    </form>
+                    
+                        <form method="POST" action="logout.php">
+                        <button type="submit" id="logout">Deconnexion</button>
+                        </form>
+                   
+                </div>
+            </nav>
+        </div> 
+
+        <div id="main-title-container">
+              <img src="../assets/pages/main-title.png" alt="main-title"> 
+        </div>
+    </header>
+
+    <main>
+        <div class="text-container">
+            <p>
+                <span>VoidGunner, c’est quoi ?</span><br>
+                VoidGunner est un jeu sur navigateur style rétro 2D, le principe est simple, détruire le Destroyer Alien qui menace la Galaxie, mais pour cela, 
+                    vous devrez faire face a des vagues d’éclaireurs qui essaireont de vous désintégrer sans relâche...
+            </p>
+        </div>
+
+        <div class="media-container">
+            <div class="vid">
+                 <img src="../assets/pages/gameplay.gif" alt="" width="100%" height="100%">
+            </div>
+        </div>   
+
+        <div class="text-container2">
+            <ul>
+                <span>Les avantages</span><br>
+                <li>Pas de téléchargement</li>
+                <li>Pas de paiement</li>
+                <li>Acces simple et rapide</li>
+                <li>Prise en main facile</li>
+                <li>Tout public</li>
+                <li>Requiert uniquement un navigateur et une inscription</li>        
+            </ul>
+        </div>
+
+        <div class="media-container2">
+            <div class="vid">
+                <img src="../assets/pages/scoreboard.gif" alt="game-scoreboard" width="100%" height="100%">
+            </div>
+        </div>
+
+        <div class="text-container3">
+            <p>
+                <span>Comment jouer ?</span><br>
+                Le principe est simple, détruire le plus de vaisseaux ennemis possible afin d’obtenir le plus haut score, mais attention, vous ne disposez que d’une seule vie !
+            </p>
+        </div>
+
+        <div class="media-container3">
+            <div class="vid">
+                <img src="../assets/pages/gears-removebg-preview.png" alt="gears" width="200px">
+            </div>
+        </div>
+
+    </main>
+
+<div id="registrationField">
+    <div id="formContainer">
+        <img src="../assets/pages/cross1.png" alt="" id="cancel1">
+        <h2>Inscription</h2>
+        <form action="register.php" method="POST" id="subscriptionForm">
+            <label for="userName">- Nom d'utilisateur :</label>
+            <input type="text" name="userName" id="userName">
+            <label for="email">- E-mail :</label>
+            <input type="email" name="email" id="email">
+            <label for="userPassword">- Mot de passe :</label>
+            <input type="password" name="userPassword" id="userPassword">
+            <label for="confirmPassword">- Valider le mot de passe :</label>
+            <input type="password" name="confirmPassword" id="confirmPassword">
+            <p id="invalidField">données invalides</p>
+            <button id="validateBt">confirmer</button>
+
+        </form>
+    </div>
+</div>
+ 
+    <section>
+    
+            <div id="playBt-container">
+                
+                    <button id="playBt">JOUER</button>
+                
+                    <button id="connectionRequired">CONNECTEZ-VOUS</button>
+               
+            </div>
+       
+    </section>
+
+
+    <footer>
+        <div>
+            <a href="./contact.php">Contact</a>
+            <a href="./privacyPolicy.php">Politique de confidentialité</a>
+        </div>
+    </footer>   
+
+    <script src="./script.js"></script>
+    <script src="./verify.js"></script>
+
+    
+</body>
+</html>

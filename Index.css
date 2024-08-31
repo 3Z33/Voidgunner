@@ -1,0 +1,557 @@
+@font-face {
+  font-family: "PressStart2P";
+  src: url("../fonts/PressStart2P-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Orbitron";
+  src: url("../fonts/Orbitron-VariableFont_wght.ttf");
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../assets/space-background.png");
+  background-attachment: fixed;
+  animation: rotate 25s linear infinite;
+  box-sizing: content-box;
+  font-family: "Orbitron";
+  font-family: "Orbitron";
+  overflow-x: hidden;
+}
+
+@keyframes rotate {
+  0% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 107%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+nav {
+  height: 70px;
+  width: 100vw;
+  background: linear-gradient(to right, #412CC1 32%, #070030 88%);
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > ul {
+  margin: 0 100px 0 0;
+  display: flex;
+  list-style: none;
+  gap: 140px;
+  padding: 0;
+}
+
+nav > ul > li {
+  background-color: #171717;
+  height: 70px;
+  width: 170px;
+  list-style: none;
+  border: 2px solid #00FF00;
+  text-transform: uppercase;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+nav > ul > li a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #00FF00;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  place-items: center;
+}
+
+nav > ul > li:hover {
+  box-shadow: 0 0 10px 4px #00FF00;
+  cursor: pointer;
+}
+
+#navbar-login {
+  position: absolute;
+  z-index: -1000;
+  right: 35px;
+  opacity: 0;
+  top: 70px;
+  width: 269px;
+  overflow: hidden;
+  height: 20px;
+  transition: height 0.2s linear;
+  background-color: #171717;
+  color: #00FF00;
+  border: 2px solid #00FF00;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  place-items: center;
+  box-sizing: border-box;
+}
+#navbar-login form {
+  background-color: #171717;
+  text-transform: lowercase;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 5px;
+  border: none;
+  padding-top: 10px;
+}
+#navbar-login form label {
+  height: 12px;
+}
+#navbar-login form input {
+  width: 60%;
+  margin: 5px auto 5px auto;
+  font-size: 20px;
+}
+#navbar-login form button {
+  background-color: #171717;
+  color: #00FF00;
+  border: 2px solid #00FF00;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  place-items: center;
+  box-sizing: border-box;
+  width: 130px;
+  margin: 10px auto 10px auto;
+  opacity: 0.3;
+}
+#navbar-login form button:hover {
+  box-shadow: 0 0 5px 2px #00FF00;
+  cursor: pointer;
+}
+#navbar-login form p {
+  width: 100%;
+  margin: 0;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+#navbar-login.active {
+  z-index: 0;
+  opacity: 1;
+  height: 260px;
+}
+
+#logout {
+  background-color: #171717;
+  color: #00FF00;
+  border: 2px solid #00FF00;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  place-items: center;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  height: 100%;
+  width: 170px;
+  color: red;
+  border-color: red;
+}
+
+#logout:hover {
+  box-shadow: 0 0 10px 4px;
+  cursor: pointer;
+}
+
+#logoContainer {
+  width: 120px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background-color: #171717;
+  margin-left: 100px;
+  border: 2px solid #00FF00;
+}
+
+#main-title-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 270px;
+}
+
+main {
+  width: 1520px;
+  margin: auto;
+  color: #fff;
+}
+main p {
+  margin: 0;
+  width: 1000px;
+  height: 100%;
+  font-size: 20px;
+}
+
+.text-container {
+  height: 268px;
+  margin-top: 250px;
+}
+
+span {
+  text-decoration: underline;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.media-container {
+  height: 360px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.vid {
+  background-color: #171717;
+  background-image: url("../assets/pages/playgif.webm");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  width: 847px;
+  height: 360px;
+  box-shadow: 0px 0px 50px 20px rgba(255, 255, 255, 0.5);
+}
+
+.text-container2 {
+  margin-top: 84px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.text-container2 > ul {
+  width: 753px;
+  height: 309px;
+  margin: 0;
+  padding: 0;
+}
+
+.media-container2 {
+  height: 360px;
+  display: flex;
+  margin-top: 94px;
+}
+
+.text-container3 {
+  margin-top: 120px;
+  height: 220px;
+}
+
+.text-container3 > p {
+  width: 823px;
+  height: 220px;
+}
+
+.media-container3 {
+  height: 360px;
+  display: flex;
+  margin-top: 94px;
+  justify-content: flex-end;
+  margin-top: 28px;
+}
+
+#registrationField {
+  background-color: rgba(0, 0, 0, 0.925);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  display: none;
+  place-items: center;
+}
+#registrationField #formContainer {
+  background-color: #777777;
+  position: relative;
+  width: 600px;
+  height: 500px;
+  margin: auto;
+  border-radius: 10px;
+  background-color: rgba(27, 27, 27, 0.808);
+  color: #fff;
+  border: 1px solid #00FF00;
+}
+#registrationField #formContainer #cancel1 {
+  position: absolute;
+  right: 5px;
+}
+#registrationField #formContainer h2 {
+  text-align: center;
+}
+#registrationField #formContainer form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+#registrationField #formContainer form button {
+  background-color: #171717;
+  color: #00FF00;
+  border: 2px solid #00FF00;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  place-items: center;
+  box-sizing: border-box;
+  width: 180px;
+  height: 30px;
+  margin-top: 66px;
+}
+#registrationField #formContainer form button:hover {
+  box-shadow: 0 0 5px 2px #00FF00;
+  cursor: pointer;
+}
+#registrationField #formContainer form input {
+  width: 300px;
+  font-size: 25px;
+  border-radius: 5px;
+  border: none;
+}
+#registrationField #formContainer form p {
+  text-align: center;
+  width: 100%;
+  color: red;
+}
+
+#playBt-container {
+  display: flex;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+#playBt-container #playBt, #playBt-container #connectionRequired {
+  width: 500px;
+  height: 133px;
+  background-color: #171717;
+  border: 2px solid #00FF00;
+  margin: auto;
+  font-family: inherit;
+  color: #00FF00;
+  font-size: 50px;
+}
+#playBt-container #playBt:hover, #playBt-container #connectionRequired:hover {
+  box-shadow: 0 0 10px 4px #00FF00;
+  cursor: pointer;
+}
+#playBt-container #connectionRequired {
+  font-size: 40px;
+}
+
+.currentShipWindow {
+  width: 400px;
+  height: 400px;
+  background-color: #171717;
+  border: 1px solid #00FF00;
+  margin: 330px auto 252px auto;
+}
+
+footer {
+  height: 100px;
+  background: linear-gradient(to top, #070030 0%, #412CC1 90%);
+  border: 2px solid black;
+  align-content: center;
+}
+footer div {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer div a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s, text-decoration 0.3s;
+  font-size: 20px;
+}
+
+footer > div > a:hover {
+  color: #00FF00;
+  text-decoration: underline;
+}
+
+.userNotConnected {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8980392157);
+  z-index: -1000;
+  opacity: 0;
+}
+.userNotConnected p {
+  color: rgb(200, 0, 0);
+  font-size: 30px;
+  text-align: center;
+  margin: 20% auto;
+}
+
+.shopPanel {
+  width: 1400px;
+  height: 780px;
+  margin: 0 auto 408px auto;
+  position: relative;
+  background-color: #171717;
+  border: 1px solid #00FF00;
+  font-size: 15px;
+  color: white;
+}
+
+.carousel-container {
+  position: relative;
+  width: 1205px;
+  display: flex;
+  height: 220px;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 971px;
+}
+
+.carousel-item {
+  min-width: 322px;
+  height: 355px;
+  border: 1px solid black;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.prev-btn, .next-btn {
+  position: absolute;
+  width: 116px;
+  height: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #363636;
+  color: #00FF00;
+  border: none;
+  cursor: pointer;
+}
+
+.prev-btn {
+  left: 0px;
+}
+
+.next-btn {
+  right: 0px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+  background-color: rgb(124, 124, 124);
+}
+
+#a1 {
+  background-color: #834040;
+}
+
+#a2 {
+  background-color: #0a4d15;
+}
+
+#a3 {
+  background-color: #351ba5;
+}
+
+#a4 {
+  background-color: #d6479f;
+}
+
+#a5 {
+  background-color: #49ff52;
+}
+
+#a6 {
+  background-color: #867ed4;
+}
+
+#a7 {
+  background-color: #852600;
+}
+
+#a8 {
+  background-color: #4ef5ec;
+}
+
+#a9 {
+  background-color: #834040;
+}
+
+#a10 {
+  background-color: #0a4d15;
+}
+
+#a11 {
+  background-color: #351ba5;
+}
+
+#a12 {
+  background-color: #d6479f;
+}
+
+#a13 {
+  background-color: #49ff52;
+}
+
+#a14 {
+  background-color: #867ed4;
+}
+
+#a15 {
+  background-color: #852600;
+}
+
+#a16 {
+  background-color: #4ef5ec;
+}
+
+.shipDescription {
+  padding: 0px 180px;
+  margin-top: 50px;
+}
+.shipDescription p {
+  width: 100%;
+  margin: 0;
+}
+.shipDescription p:nth-of-type(3) {
+  text-decoration: underline;
+}
+.shipDescription .gunsImg {
+  width: 150px;
+  height: 150px;
+  margin: 10px 0;
+  background-color: #2b2b2b;
+}
+
+.equip-buy-bt {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+  height: 70px;
+}
+.equip-buy-bt button {
+  width: 300px;
+  height: 70px;
+  background-color: #171717;
+  border: 1px solid #00FF00;
+  color: #00FF00;
+  font-family: "Orbitron";
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.equip-buy-bt button:hover {
+  box-shadow: 0 0 10px 4px #00FF00;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Index.css.map */

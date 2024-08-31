@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/Index.css">
+    <title>Voidgunner</title>
+</head>
+<body>
+    <header>
+         <div>
+            <nav>
+                <div id="logoContainer"><img src="../assets/pages/vlogo.png" alt="logo" width="150px"></div>
+                <ul>
+                    <li><a href="./Index.php">accueil</a></li>
+                    <li><a href="./hangar.php">hangar</a></li>
+                    <li><a href="#">tableau de scores</a></li>
+                    <li><a href="#">connexion</a></li>
+                </ul>
+                <div id="navbar-login">
+                    <form action="login.php" method="POST">
+                        <label for="login-userName">Nom d'utilisateur :</label>
+                        <input type="text" name="login-userName" id="login-userName">
+                        <label for="login-userPassword">Mot de passe :</label>
+                        <input type="password" name="login-userPassword" id="login-userPassword">
+                        <button #id='connectBt'>Se connecter</button>
+                        <p><a href="#" id="registration">Pas de compte ?</a></p>
+                        <p><a href="#" id="forgotPassword">Mot de passe oublié ?</a></p>
+                    </form>
+                    
+                   
+                </div>
+            </nav>
+        </div> 
+    </header>
+
+    <section>
+        <div class="currentShipWindow">
+            <img src="" alt="">
+        </div>
+    </section>
+
+    <section>
+        
+        <div class="shopPanel">
+            <div class="userNotConnected">
+                <p>Vous devez être connecté pour accèder à la boutique</p>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item" id="a1"><img src="image1.jpg" alt="Image 1"></div>
+                    <div class="carousel-item" id="a2"><img src="image2.jpg" alt="Image 2"></div>
+                    <div class="carousel-item" id="a3"><img src="image3.jpg" alt="Image 3"></div>
+                    <div class="carousel-item" id="a4"><img src="image4.jpg" alt="Image 4"></div>
+                    <div class="carousel-item" id="a5"><img src="image1.jpg" alt="Image 5"></div>
+                    <div class="carousel-item" id="a6"><img src="image2.jpg" alt="Image 6"></div>
+                    <div class="carousel-item" id="a7"><img src="image3.jpg" alt="Image 7"></div>
+                    <div class="carousel-item" id="a8"><img src="image4.jpg" alt="Image 8"></div>
+                    <div class="carousel-item" id="a9"><img src="image1.jpg" alt="Image 1"></div>
+                    <div class="carousel-item" id="a10"><img src="image2.jpg" alt="Image 2"></div>
+                    <div class="carousel-item" id="a11"><img src="image3.jpg" alt="Image 3"></div>
+                    <div class="carousel-item" id="a12"><img src="image4.jpg" alt="Image 4"></div>
+                    <div class="carousel-item" id="a13"><img src="image1.jpg" alt="Image 5"></div>
+                    <div class="carousel-item" id="a14"><img src="image2.jpg" alt="Image 6"></div>
+                    <div class="carousel-item" id="a15"><img src="image3.jpg" alt="Image 7"></div>
+                    <div class="carousel-item" id="a16"><img src="image4.jpg" alt="Image 8"></div>
+                </div>
+                <button class="prev-btn">⟨</button>
+                <button class="next-btn">⟩</button>
+            </div>
+
+
+            <div class="shipDescription">
+                <p>vaisseau de base.</p><br>
+                <p>Le Scout est le vaisseau offert pas la S.I.O aux nouvelles recrues, ces derniers devront faire leurs preuves afin de monter en grade et de pouvoir piloter des vaisseaux plus avancés.</p><br><br>
+                <p>Munitions :</p>
+                <div class="gunsImg"></div>
+                <p>Munitions lasers basiques</p>
+            </div>
+
+            <div class="equip-buy-bt">
+                <!-- <button id="equipBt">équiper</button> -->
+                <button id="buyBt">acheter</button>
+            </div>
+
+        </div> 
+    </section>
+
+    <script src="./script.js"></script>
+
+
+    <footer>
+        <div>
+            <a href="./contact.php">Contact</a>
+            <a href="./privacyPolicy.php">Politique de confidentialité</a>
+        </div>
+    </footer>
+
+</body>
+</html>
